@@ -7,52 +7,11 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
+  color: black;
 }
 
-.header {
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
-  margin: 0;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  position: absolute;
-  background-size: cover;
-  background-color: #2f80ed;
-  right: 0;
-  top: 64px;
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
+.text_theme_dark {
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.header_illustration {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 765px;
-  height: 608px;
-  background-size: cover;
-  background-image: url(/images/two_again.png);
-}
-
-.logo_place_header {
-  position: absolute;
-  left: 64px;
-  top: 30px;
-  background-image: url(/images/logo_place_header.svg);
 }
 
 .logo {
@@ -60,35 +19,9 @@
   height: 32px;
 }
 
-.main-title {
-  font-size: 102px;
-  font-weight: 600;
-  line-height: 96px;
-  width: 730px;
-  margin: auto 64px;
-}
-
-.subtitle {
-  position: absolute;
-  width: 388px;
-  left: 64px;
-  bottom: 30px;
-  line-height: 25px;
-  font-size: 18px;
-  font-style: normal;
-}
-
-.header_subtitle-link {
+.link {
   color: #2f80ed;
   text-decoration: none;
-}
-
-.icon-arrow {
-  color: #2f80ed;
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
-  background-image: url(/images/Arrow.svg);
 }
 
 .flex-column {
@@ -103,18 +36,117 @@
   flex-wrap: wrap;
 }
 
+.main-text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cell-title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.small-title {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  color: #2f80ed;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.cell-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Первый блок в коде */
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  margin: 0;
+  /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  background-image: url(/images/logo_place_header.svg);
+}
+
+.header__title {
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  width: 730px;
+  margin: auto 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  position: absolute;
+  background-size: cover;
+  background-color: #2f80ed;
+  right: 0;
+  top: 64px;
+  height: 568px;
+  width: 568px;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  background-size: cover;
+  background-image: url(/images/two_again.png);
+}
+
+/* Второй блок в коде */
+
+/* и элемента с модификатором вида ключ-значение */
 .description__two-columns {
   margin: 100px auto;
   width: 80%;
   align-items: flex-start;
-}
-
-.two-columns__paragraph {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  margin-top: 0;
 }
 
 .two-columns__brief {
@@ -126,45 +158,29 @@
   min-width: 784px;
 }
 
-.second-title {
-  margin: 0;
-  width: 175px;
-  font-size: 18px;
-  color: #2f80ed;
-  font-weight: normal;
-  line-height: 1.2;
+.two-columns__paragraph {
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
-.bold-text {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-}
+/* Третий блок в коде */
 
 .digits {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.section-title {
+.digits__section-title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 0;
-  text-align: center;
   width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
 }
 
-.section-subtitle {
+.digits__section-subtitle {
   margin: auto;
-  text-align: center;
   width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
 }
 
 .table {
@@ -173,25 +189,21 @@
   margin-right: auto;
 }
 
-.table_cell {
+.table__heading {
+  margin: 0;
+  text-align: left;
+}
+
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
 
-.table_heading {
-  margin: 0;
-  text-align: left;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
+.table__text {
+  margin-top: 20px;
 }
 
-.table_text {
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
+/* Четвертый блок в коде */
 
 .feynman {
   position: relative;
@@ -200,7 +212,7 @@
   margin: auto;
 }
 
-.feynman_title {
+.feynman__title {
   width: 648px;
   margin: auto;
   left: 0;
@@ -215,7 +227,7 @@
   z-index: 3;
 }
 
-.feynman_subtitle {
+.feynman__subtitle {
   position: absolute;
   z-index: 2;
   line-height: 51px;
@@ -234,16 +246,16 @@
   bottom: 0;
 }
 
-.feynman_link {
+.feynman__link {
   position: absolute;
   font-size: 36px;
-  color: #2f80ed;
   line-height: 51px;
-  text-decoration: none;
   font-weight: normal;
   top: 50%;
   right: 48px;
 }
+
+/* Пятый блок в коде */
 
 .kaufman {
   position: relative;
@@ -252,59 +264,6 @@
   overflow: hidden;
   margin: 0;
   z-index: -1;
-}
-
-.section-title_theme_dark {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 90px;
-  padding-top: 0;
-  text-align: center;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  color: white;
-}
-
-.section-subtitle_theme_dark {
-  margin: auto;
-  text-align: center;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
-}
-
-.table_theme_dark {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 90px;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  margin-top: 80px;
-}
-
-.table__heading_theme_dark {
-  margin: 0;
-  text-align: left;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
-}
-
-.table__text_theme_dark {
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
 }
 
 .kaufman_image {
@@ -316,14 +275,44 @@
   z-index: -2;
 }
 
+.section-title_theme_dark {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  padding-top: 0;
+  width: 60%;
+}
+
+.section-subtitle_theme_dark {
+  margin: auto;
+  width: 60%;
+}
+
+.table_theme_dark {
+  padding-bottom: 90px;
+}
+
+.table__heading_theme_dark {
+  margin: 0;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.table__text_theme_dark {
+  margin-top: 20px;
+}
+
+/* Футер - блок в коде */
+
 .footer {
   background-color: black;
   min-height: 350px;
   margin: 0 auto;
-}
-
-.footer__text-color {
-  color: white;
 }
 
 .logo_place_footer {
@@ -352,6 +341,17 @@
   padding-bottom: 18px;
 }
 
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
@@ -360,18 +360,7 @@
   text-decoration: none;
 }
 
-.footer__column-links {
-  padding-top: 20px;
-  padding-bottom: 16px;
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.icon {
+.social-icon {
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -379,14 +368,14 @@
   vertical-align: middle;
 }
 
-.icon-facebook {
+.social-icon-facebook {
   background: url("/images/facebook_color_white.svg") no-repeat;
 }
 
-.icon-vkontakte {
+.social-icon-vkontakte {
   background: url("/images/vk_color_white.svg") no-repeat;
 }
 
-.icon-instagram {
+.social-icon-instagram {
   background: url("/images/instagram_color_white.svg") no-repeat;
 }
